@@ -7,9 +7,7 @@ Getting started
 -------------------------------------------------------------------------------------------
 
 ### location on CWS
-
-Th
-test_file = './../../s3/data/test.csv'
+folder_for_EEA_template_repository = 'C:\Users\[user-profil]\projects\'
 
 ### How to clone
 
