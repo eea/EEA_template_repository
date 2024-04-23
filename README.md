@@ -7,7 +7,7 @@ Getting started
 -------------------------------------------------------------------------------------------
 
 ### location on CWS
-folder_for_EEA_template_repository = 'C:\Users\[user-name]\projects\'
+folder_for_EEA_template_repository = 'C:\Users\"user-name"\projects\'
 
 ### How to clone
 
