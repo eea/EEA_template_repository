@@ -28,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='input_data' name='textscan.1kx7t2m0rg5hlu12n64gg11m3cde'>
-            <connection class='textscan' directory='W:/sandbox/template_files/tableau/tableau_example.twb Files/Data/tableau' filename='input_data.txt' password='' server='' />
+            <connection class='textscan' directory='W:/sandbox/template_files/tableau/tableau_example2.twb Files/Data/tableau' filename='input_data.txt' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1kx7t2m0rg5hlu12n64gg11m3cde' name='input_data.txt' table='[input_data#txt]' type='table'>
@@ -282,8 +282,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='7375' id='5' type-v2='text' w='98400' x='800' y='1000'>
                   <formatted-text>
                     <run bold='true' fontcolor='#59a14f' fontsize='26'>Example</run>
