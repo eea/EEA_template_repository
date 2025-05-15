@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.1011.1414                               -->
+<workbook original-version='18.1' source-build='2024.2.4 (20242.24.1011.1414)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='input_data from CWS - csv file:' inline='true' name='federated.05fk6fm1jtt9gv1eg7js00xoui97' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='input_data' name='textscan.1kx7t2m0rg5hlu12n64gg11m3cde'>
+            <connection class='textscan' directory='W:/sandbox/template_files/tableau/tableau_example.twb Files/Data/tableau' filename='input_data.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1kx7t2m0rg5hlu12n64gg11m3cde' name='input_data.txt' table='[input_data#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator='&#9;'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='User' ordinal='1' />
+            <column datatype='integer' name='number of kids' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1kx7t2m0rg5hlu12n64gg11m3cde' name='input_data.txt' table='[input_data#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator='&#9;'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='User' ordinal='1' />
+            <column datatype='integer' name='number of kids' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[input_data.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[input_data.txt]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[input_data.txt_761C54C6FADB495EB92387BFBE524EEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[User]</local-name>
+            <parent-name>[input_data.txt]</parent-name>
+            <remote-alias>User</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[input_data.txt_761C54C6FADB495EB92387BFBE524EEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number of kids</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number of kids]</local-name>
+            <parent-name>[input_data.txt]</parent-name>
+            <remote-alias>number of kids</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[input_data.txt_761C54C6FADB495EB92387BFBE524EEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='input_data.txt' datatype='table' name='[__tableau_internal_object_id__].[input_data.txt_761C54C6FADB495EB92387BFBE524EEE]' role='measure' type='quantitative' />
+      <column caption='Number Of Kids' datatype='integer' name='[number of kids]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Denmark&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='input_data.txt' id='input_data.txt_761C54C6FADB495EB92387BFBE524EEE'>
+            <properties context=''>
+              <relation connection='textscan.1kx7t2m0rg5hlu12n64gg11m3cde' name='input_data.txt' table='[input_data#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator='&#9;'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='User' ordinal='1' />
+                  <column datatype='integer' name='number of kids' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1 (graph)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of kids by user</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='input_data from CWS - csv file:' name='federated.05fk6fm1jtt9gv1eg7js00xoui97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05fk6fm1jtt9gv1eg7js00xoui97'>
+            <column datatype='string' name='[User]' role='dimension' type='nominal' />
+            <column-instance column='[User]' derivation='None' name='[none:User:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Kids' datatype='integer' name='[number of kids]' role='measure' type='quantitative' />
+            <column-instance column='[number of kids]' derivation='Sum' name='[sum:number of kids:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[none:User:nk]</rows>
+        <cols>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[sum:number of kids:qk]</cols>
+      </table>
+      <simple-id uuid='{917BE9B8-7263-435F-92A5-D0A47E1A8A1D}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (total number)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total number of kids:</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='input_data from CWS - csv file:' name='federated.05fk6fm1jtt9gv1eg7js00xoui97' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05fk6fm1jtt9gv1eg7js00xoui97'>
+            <column caption='Number Of Kids' datatype='integer' name='[number of kids]' role='measure' type='quantitative' />
+            <column-instance column='[number of kids]' derivation='Sum' name='[sum:number of kids:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05fk6fm1jtt9gv1eg7js00xoui97].[sum:number of kids:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{03BD4B4C-8DD2-490E-9068-E354910534D0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_8' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='36125' id='3' name='Sheet 1 (graph)' w='98400' x='800' y='13875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='7375' id='5' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run bold='true' fontcolor='#59a14f' fontsize='26'>Example</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5500' id='6' type-v2='empty' w='98400' x='800' y='8375'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f3faf9' />
+            </zone-style>
+          </zone>
+          <zone h='49000' id='7' name='Sheet 2 (total number)' show-title='false' w='68100' x='31100' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='49000' id='8' type-v2='text' w='30300' x='800' y='50000'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='14'>Total number of kids:</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7375' id='5' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#59a14f' fontsize='26'>Example</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36125' id='3' is-fixed='true' name='Sheet 1 (graph)' w='98400' x='800' y='13875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='49000' id='8' type-v2='text' w='30300' x='800' y='50000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='14'>Total number of kids:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='7' is-fixed='true' name='Sheet 2 (total number)' show-title='false' w='68100' x='31100' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1CB76BDE-F849-4178-A665-616D08BB5A5E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='Sheet 1 (graph)' />
+        <viewpoint name='Sheet 2 (total number)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{04839009-14E5-4C89-AFA0-8BC5298E5C9D}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (graph)' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[none:ID:ok]</field>
+            <field>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[none:User:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D6B73B63-6AEA-435F-88F6-D7943E4BBBAF}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (total number)' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[none:ID:ok]</field>
+            <field>[federated.05fk6fm1jtt9gv1eg7js00xoui97].[none:User:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{92F4EAB0-A471-4D03-AA21-9C41499E13BA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AYjR/g/CedpfjAVKtwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='179' name='Sheet 1 (graph)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='24' name='Sheet 2 (total number)' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABMklEQVRYhe2YMWrDMBiFX0RvktFTMDi78eQ5oKtoNB6CFw+ZMnixL2B8AGcNWbMkIKwD
+      JCfIIv0dCm5NSjsU+lPV3yY9DU8fEgItiIjwjxHcBbiZBXAX4GYWwF2Am1kAdwFuZgHcBbiZ
+      BXAX4GYWwF2AGy8EOOegtUaWZZBS4n6/T7Lj8YjNZoMoihDHMdq2hXMOgCcCLpcL9vs9pJRY
+      r9eT7Hq9ous6bLdbnE4n1HWNw+EAY8zbAvKMsizpdruNY2stWWsna5qmofP5TEREXpyArxBC
+      QIj3bWqtMQwDlsslAOCFq9hv8ng8sNvtEAQB0jRFnudj5r0A5xyqqkKSJAjD8Cn3/goYY0BE
+      WK1Wn+YLor//Kdr3PZRST/NFUUAIAaXU+Ox9zJIk8UPAT/D+CnzHK1GFWfaMClW6AAAAAElF
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
