@@ -1,0 +1,1388 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" W:\sandbox\template_files\fme\example_fme_script_from_csv_to_excel_file.fmx
+#          --SourceDataset_CSV2_3 "$(FME_MF_DIR)input_data.txt"
+#          --DestDataset_XLSXW "$(FME_MF_DIR)output_file.xlsx"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3550.24 603.753"
+#!   DOC_TOP_LEFT="-1248.51 -312.499"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24820"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="f28502ae-6b46-486c-9412-2a7f6ff7e187"
+#!   FME_DOCUMENT_PRIORGUID="a3ccef13-7aec-4391-9766-5e07b97fe1a6,91ea584e-3a4b-4b04-9adf-966fd1c3419b"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.2.0 (20250114 - Build 24820 - WIN64)"
+#!   LAST_SAVE_DATE="2025-05-15T09:49:15"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE="example"
+#!   USAGE="&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FME Example&lt;/p&gt;"
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-1231.26 825.008"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2_3)"
+#!   KEYWORD="CSV2_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id string multi_reader_id string multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24820"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="XLSXW"
+#!   DATASET="$(DestDataset_XLSXW)"
+#!   KEYWORD="XLSXW_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_field_names_formatting NO xlsx_field_names_row_height &quot;&lt;Unused&gt;&quot; xlsx_field_names_font_name &quot;&lt;Unused&gt;&quot; xlsx_field_names_font_color &quot;&lt;Unused&gt;&quot; xlsx_field_names_background_color &quot;&lt;Unused&gt;&quot; xlsx_field_names_pattern_color &quot;&lt;Unused&gt;&quot; xlsx_field_names_pattern_style &quot;&lt;Unused&gt;&quot; xlsx_field_names_cell_border_color &quot;&lt;Unused&gt;&quot; xlsx_field_names_cell_border_style &quot;&lt;Unused&gt;&quot; xlsx_field_names_horizontal_alignment &quot;&lt;Unused&gt;&quot; xlsx_field_names_vertical_alignment &quot;&lt;Unused&gt;&quot; xlsx_field_names_text_indent &quot;&lt;Unused&gt;&quot; xlsx_field_names_text_orientation &quot;&lt;Unused&gt;&quot; xlsx_field_names_text_control &quot;&lt;Unused&gt;&quot; xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot; xlsx_template_sheet &quot;&quot; xlsx_remove_unchanged_template_sheet &quot;No&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename string(50,xlsx_col_props) fme_color string(50,xlsx_col_props) fme_dataset string(50,xlsx_col_props) fme_db_operation string(width,xlsx_col_props) fme_feature_type string(50,xlsx_col_props) fme_fill_color string(50,xlsx_col_props) fme_geometry string(50,xlsx_col_props) fme_primary_axis number(width,xlsx_col_props) fme_rotation number(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_start_angle number(width,xlsx_col_props) fme_sweep_angle number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_text_string string(50,xlsx_col_props) fme_type string(50,xlsx_col_props) xlsx_col_id number(width,xlsx_col_props) xlsx_raster_height number(width,xlsx_col_props) xlsx_raster_scale_factor number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props) xlsx_row_formatting string(width,xlsx_col_props) xlsx_row_id number(width,xlsx_col_props) xlsx_type string(width,xlsx_col_props)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_names_are_positions%xlsx_row_id_column%xlsx_freeze_end_row%xlsx_field_names_out%xlsx_field_names_formatting%xlsx_truncate_group%xlsx_rowcolumn_group%xlsx_template_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column%Delete,+xlsx_row_id_column Writer Mode:&quot; Insert &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s):&quot; &quot;&quot; &quot;GUI ACTIVECHOICE xlsx_field_names_out Yes%No,xlsx_field_names_formatting,++xlsx_field_names_formatting+No Output Field Names:&quot; Yes &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_field_names_formatting xlsx_field_names_row_height%xlsx_field_names_font%xlsx_field_names_fill%xlsx_field_names_cell%xlsx_field_names_alignment Field Names Row Formatting&quot; NO &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_row_height 0%409.5%2%OFF Row Height:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_font xlsx_field_names_font_name%xlsx_field_names_font_color Font&quot; &quot;&quot; &quot;GUI OPTIONAL FONT_OR_ATTR_ENCODED xlsx_field_names_font_name Font:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_font_color COLOR_SPEC%RGBF Font Color:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_fill xlsx_field_names_background_color%xlsx_field_names_pattern_color%xlsx_field_names_pattern_style Fill&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_background_color COLOR_SPEC%RGBF Background Color:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_pattern_color COLOR_SPEC%RGBF Pattern Color:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_pattern_style None,FILLPATTERN_NONE%Solid,FILLPATTERN_SOLID%Half&lt;space&gt;Filled,FILLPATTERN_GRAY50%75&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY75%25&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY25%Horizontal&lt;space&gt;Stripe,FILLPATTERN_HORSTRIPE%Vertical&lt;space&gt;Stripe,FILLPATTERN_VERSTRIPE%Reversed&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_REVDIAGSTRIPE%Diagonal&lt;space&gt;Stripe,FILLPATTERN_DIAGSTRIPE%Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_DIAGCROSSHATCH%Thick&lt;space&gt;Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_THICKDIAGCROSSHATCH%Thin&lt;space&gt;Horizontal&lt;space&gt;Stripe,FILLPATTERN_THINHORSTRIPE%Thin&lt;space&gt;Vertical&lt;space&gt;Stripe,FILLPATTERN_THINVERSTRIPE%Thin&lt;space&gt;Reversed&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_THINREVDIAGSTRIPE%Thin&lt;space&gt;Diagonal&lt;space&gt;Stripe,FILLPATTERN_THINDIAGSTRIPE%Thin&lt;space&gt;Horizontal&lt;space&gt;Cross-Hatch,FILLPATTERN_THINHORCROSSHATCH%Thin&lt;space&gt;Diagonal&lt;space&gt;Cross-Hatch,FILLPATTERN_THINDIAGCROSSHATCH%12.5&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY12P5%6.25&lt;space&gt;Percent&lt;space&gt;Filled,FILLPATTERN_GRAY6P25 Pattern Style:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_cell xlsx_field_names_cell_border_color%xlsx_field_names_cell_border_style Cell Border&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_OR_ATTR xlsx_field_names_cell_border_color COLOR_SPEC%RGBF Border Color:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_cell_border_style None,BORDERSTYLE_NONE%Thin,BORDERSTYLE_THIN%Medium,BORDERSTYLE_MEDIUM%Dashed,BORDERSTYLE_DASHED%Dotted,BORDERSTYLE_DOTTED%Thick,BORDERSTYLE_THICK%Double,BORDERSTYLE_DOUBLE%Hair,BORDERSTYLE_HAIR%Medium&lt;space&gt;Dashed,BORDERSTYLE_MEDIUMDASHED%Dash&lt;space&gt;Dot,BORDERSTYLE_DASHDOT%Medium&lt;space&gt;Dash&lt;space&gt;Dot,BORDERSTYLE_MEDIUMDASHDOT%Dash&lt;space&gt;Dot&lt;space&gt;Dot,BORDERSTYLE_DASHDOTDOT%Medium&lt;space&gt;Dash&lt;space&gt;Dot&lt;space&gt;Dot,BORDERSTYLE_MEDIUMDASHDOTDOT%Slant&lt;space&gt;Dash&lt;space&gt;Dot,BORDERSTYLE_SLANTDASHDOT Border Style:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_field_names_alignment xlsx_field_names_horizontal_alignment%xlsx_field_names_vertical_alignment%xlsx_field_names_text_indent%xlsx_field_names_text_orientation%xlsx_field_names_text_control Text Alignment:&quot; &quot;&quot; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_horizontal_alignment Left,left%Center,center%Right,right Horizontal Alignment:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_CHOICE xlsx_field_names_vertical_alignment Top,top%Center,center%Bottom,bottom Vertical Alignment:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_text_indent 0%15%1%OFF Text Indent:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL RANGE_SLIDER_OR_ATTR xlsx_field_names_text_orientation -90%90%0%ON%INCR,15 Text Orientation:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_template_group xlsx_template_sheet%xlsx_remove_unchanged_template_sheet Template Options&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT xlsx_template_sheet \&quot; \&quot; Template Sheet:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_remove_unchanged_template_sheet Yes%No Remove Template Sheet if Unchanged:&quot; No &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="24820"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_READER"
+#!   VALUE="XLSXR"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Sheet1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="USER_ATTRIBUTES_COLUMNS"
+#!   VALUE="Width,Cell Width%Precision,Formatting"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Microsoft Excel file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="auto(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime(width,xlsx_col_props)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time(width,xlsx_col_props)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date(width,xlsx_col_props)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean(width,xlsx_col_props)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXW"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="XLSXW"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="csv_none"
+#!   POSITION="-1198.508625086251 -187.49862498624987"
+#!   BOUNDING_RECT="-1198.508625086251 -187.49862498624987 436 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="CSV2_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="User" ATTR_TYPE="varchar(1)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number of kids" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="fme_example_sheet"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="9"
+#!   FEAT_NAMEDGEOMTYPE=""
+#!   POSITION="1693.7359373593736 201.25431254312542"
+#!   BOUNDING_RECT="1693.7359373593736 201.25431254312542 558 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="XLSXW_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="number(20,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="User" ATTR_TYPE="string(1,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="number of kids" ATTR_TYPE="number(20,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="metadata_last_update" ATTR_TYPE="number(20,version;1;cell_border_formatting;NO;text_alignment;NO;cell_protection;NO)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_alignment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_background_color" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_color" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_cell_border_style" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_fill" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_color" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_font_name" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_formatting" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_horizontal_alignment" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_color" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_pattern_style" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_row_height" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_indent" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_text_orientation" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_vertical_alignment" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_remove_unchanged_template_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_template_sheet" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="CSV2_2"
+#!   OVERRIDE="-CSV2_2_DATASET"
+#!   DATASET="CSV2_2/input_data.txt"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="XLSXW_1"
+#!   OVERRIDE="-XLSXW_1_DATASET"
+#!   DATASET="XLSXW_1/output_file.xlsx"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2_3 INCLUDE_WEB_BROWSER%CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)input_data.txt"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output_file.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyXzMiLCJwcm9tcHQiOiJTb3VyY2UgQ1NWIChDb21tYSBTZXBhcmF0ZWQgVmFsdWUpIEZpbGUocyk6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilpbnB1dF9kYXRhLnR4dCIsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwic2VsZWN0TXVsdGlwbGUiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV19LHsibmFtZSI6IkRlc3REYXRhc2V0X1hMU1hXIiwicHJvbXB0IjoiRGVzdGluYXRpb24gTWljcm9zb2Z0IEV4Y2VsIEZpbGU6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilvdXRwdXRfZmlsZS54bHN4IiwidHlwZSI6ImZpbGUiLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJ3cml0ZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFeGNlbCBGaWxlcyIsImZpbHRlciI6WyIqLnhsc3giLCIqLnhsc20iLCIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiTWljcm9zb2Z0IEV4Y2VsIDIwMDcrIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzeCJdfSx7ImRlc2NyaXB0aW9uIjoiTWljcm9zb2Z0IEV4Y2VsIDIwMDcrIE1hY3JvIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzbSJdfSx7ImRlc2NyaXB0aW9uIjoiTWljcm9zb2Z0IEV4Y2VsIFByZS0yMDA3IFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzIl19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV19XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_CSV2_3" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)input_data.txt"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2_3 INCLUDE_WEB_BROWSER%CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source CSV (Comma Separated Value) File(s):"
+#! />
+#!     <INFO NAME="DestDataset_XLSXW" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output_file.xlsx"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILENAME DestDataset_XLSXW Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="2"
+#!   NAME="INPUT CSV file"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-1248.508625086251 -97.498624986249865"
+#!   ORDER="500000000000002"
+#!   PALETTE_COLOR="Workflow3"
+#!   BOTTOM_RIGHT="-712.50862508625096 -282.49862498624987"
+#!   BOUNDING_RECT="-1248.508625086251 -97.498624986249865 536 185"
+#!   STICKY="true"
+#!   COLOUR="0.28627450980392155,0.37647058823529411,0.32549019607843138,1"
+#!   CONTENTS="5 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="11"
+#!   NAME="output excel file"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1643.7359373593736 291.25431254312542"
+#!   ORDER="500000000000005"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="2301.7359373593736 -193.74568745687458"
+#!   BOUNDING_RECT="1643.7359373593736 291.25431254312542 658 485"
+#!   STICKY="true"
+#!   COLOUR="0.16862745098039217,0.31372549019607843,0.45882352941176469,1"
+#!   CONTENTS="9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="12"
+#!   NAME="get date"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-334.37784377843775 87.501375013750135"
+#!   ORDER="500000000000007.13"
+#!   PALETTE_COLOR="Workflow2"
+#!   BOTTOM_RIGHT="201.62215622156225 -217.49862498624987"
+#!   BOUNDING_RECT="-334.37784377843775 87.501375013750135 536 305"
+#!   STICKY="true"
+#!   COLOUR="0,0.10196078431372549,0.58039215686274515,1"
+#!   CONTENTS="6 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="13"
+#!   NAME="add. date to data"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-384.37784377843775 177.50137501375013"
+#!   ORDER="500000000000007"
+#!   PALETTE_COLOR="Workflow3"
+#!   BOTTOM_RIGHT="1004.7551875518756 -312.49862498624987"
+#!   BOUNDING_RECT="-384.37784377843775 177.50137501375013 1389.1330313303133 490"
+#!   STICKY="true"
+#!   COLOUR="0.28627450980392155,0.37647058823529411,0.32549019607843138,1"
+#!   CONTENTS="14 12 6 3 8 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="14"
+#!   NAME="set up new attribute with date as integer"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="412.50462504625057 57.501375013750135"
+#!   ORDER="500000000000008"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="948.50462504625057 -247.49862498624987"
+#!   BOUNDING_RECT="412.50462504625057 57.501375013750135 536 305"
+#!   STICKY="true"
+#!   COLOUR="0.16862745098039217,0.31372549019607843,0.45882352941176469,1"
+#!   CONTENTS="3 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="AttributeCreator"
+#!   VERSION="10"
+#!   POSITION="462.50462504625057 -32.498624986249865"
+#!   BOUNDING_RECT="462.50462504625057 -32.498624986249865 436 65"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24820"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="metadata_last_update" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="User" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number of kids" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; metadata_last_update SET_TO &lt;at&gt;Value&lt;openparen&gt;_timestamp&lt;closeparen&gt; int16"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE" PARM_VALUE="NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE="&lt;bell&gt;metadata_last_update int16"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="DateTimeStamper"
+#!   VERSION="1"
+#!   POSITION="-284.37784377843775 -2.4986249862498653"
+#!   BOUNDING_RECT="-284.37784377843775 -2.4986249862498653 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24820"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="User" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="number of kids" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_timestamp" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="DATETIME_ATTR" PARM_VALUE="_timestamp"/>
+#!     <XFORM_PARM PARM_NAME="INCLUDE_FRAC_SECONDS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="INCLUDE_OFFSET" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREVIEW" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREVIEW_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="STAMP_TYPE" PARM_VALUE="date"/>
+#!     <XFORM_PARM PARM_NAME="TIMEZONE" PARM_VALUE="utc"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DateTimeStamper"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_CSV2_2,CSV2_IN_FIELDS_GROUP_CSV2_2,CSV2_IN_DELIMITER_CSV2_2,CSV2_IN_FIELD_NAMES_LINE_CSV2_2,CSV2_IN_DATA_START_LINE_CSV2_2,CSV2_IN_ADVANCED_GROUP_CSV2_2,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2,CSV2_IN_FIELD_NAMES_GROUP_CSV2_2,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2,CSV2_IN_FIELD_VALUES_GROUP_CSV2_2,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2,CSV2_IN_ENCODING_GROUP_CSV2_2,CSV2_IN_ENCODING_CSV2_2,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2,CSV2_IN_READ_SKIPPED_LINES_CSV2_2,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2,DestDataset_XLSXW_1,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_CSV2_3 $(FME_MF_DIR)input_data.txt
+
+DEFAULT_MACRO DestDataset_XLSXW $(FME_MF_DIR)output_file.xlsx
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_CSV2_3$encode)} == {}} { puts_real {Parameter 'SourceDataset_CSV2_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_XLSXW$encode)} == {}} { puts_real {Parameter 'DestDataset_XLSXW' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CSV2
+MULTI_READER_KEYWORD{0} CSV2_2
+MULTI_READER_GEN_DIRECTIVES{0} FEATURE_TYPE_NAME,FORMAT_NAME,SCAN_MAX_ROWS,250000,DATA_START_LINE,2,REPLACE_ATTR_NAME_INVALID_CHARS,No,PREVIEW_PLACEHOLDER,,DELIMITER_DETECTION_ALGORITHM,EQUAL_FIELDS_PER_LINE,SKIP_DUPLICATE_DELIMITERS,No,SCHEMA_GENERATION_GROUP,,READ_EMPTY_VALUES_AS,Null,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,FIELD_NAMES_LINE,1,DELIMITER,auto,SCAN_ADDITIONAL_FIELDS,No,CHUNK_SIZE,100000,ADVANCED_GROUP,,CASE_SENSITIVE_FIELD_NAMES,Yes,FIELD_VALUES_GROUP,,SCHEMA,,DATASET_GROUP,,SCAN_TYPES,Yes,EXPOSE_ATTRS_GROUP,,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,DATE_INPUT_FORMAT,ISO,FIELDS_GROUP,,PRESERVE_SOURCE_ENCODING,No,STRING_TYPE_ATTRIBUTE_HANDLING,EXPLICIT_WIDTH,SKIPPED_LINES_GROUP,,FIELD_NAMES_GROUP,,FIELD_SEPARATION_GROUP,,USE_CUSTOM_SCHEMA,NO,ENCODING,windows-1252,READ_SKIPPED_LINES,No,TRIM_FEATURE_TYPE_NAME,Yes,ENFORCE_STRICT_SCHEMA,No,TRIM_FIELD_NAME_QUALIFIERS,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,_MERGE_SCHEMAS,YES,TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,TRIM_FIELD_NAME_WHITESPACE,Yes,SUPPORTED_READER_ARCHIVE_EXTENSIONS,csv.gz<comma>txt.gz,ENCODING_GROUP,,TRIM_FIELD_VALUE_QUALIFIERS,Yes,CSV2_EXPOSE_FORMAT_ATTRS,
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} XLSXW
+PRIMARY_DEST_KEYWORD{0} XLSXW_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} PROTECT_SHEET_PASSWORD,<lt>Unused<gt>,FIELD_NAMES_PATTERN_COLOR,<lt>Unused<gt>,FIELD_NAMES_HORIZONTAL_ALIGNMENT,<lt>Unused<gt>,STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING,yes,FIELD_NAMES_TEXT_ORIENTATION,<lt>Unused<gt>,REMOVE_UNCHANGED_TEMPLATE_SHEET,No,FIELD_NAMES_OUT,Yes,FIELD_NAMES_FORMATTING,NO,INSERT_IGNORE_DB_OP,Yes,RASTER_FORMAT,PNG,PROTECT_SHEET_PERMISSIONS,<lt>Unused<gt>,FIELD_NAMES_TEXT_CONTROL,<lt>Unused<gt>,TEMPLATEFILE,,CUSTOM_NUMBER_FORMATTING,ENABLE_NATIVE,FIELD_NAMES_FONT,<lt>Unused<gt>,WRITER_MODE,Insert,OVERWRITE_FILE,No,COORDINATE_SYSTEM_GRANULARITY,FEATURE,FIELD_NAMES_CELL_BORDER,<lt>Unused<gt>,TEMPLATE_SHEET,,FIELD_NAMES_VERTICAL_ALIGNMENT,<lt>Unused<gt>,FIELD_NAMES_PATTERN_STYLE,<lt>Unused<gt>,FIELD_NAMES_TEXT_ALIGNMENT,<lt>Unused<gt>,ADD_WRITER_NEXT_ACTION,automatic,FIELD_NAMES_TEXT_INDENT,<lt>Unused<gt>,FIELD_NAMES_CELL_BORDER_COLOR,<lt>Unused<gt>,FIELD_NAMES_FONT_COLOR,<lt>Unused<gt>,DESTINATION_DATASETTYPE_VALIDATION,Yes,DROP_TABLE,No,TRUNCATE_TABLE,No,FIELD_NAMES_FILL,<lt>Unused<gt>,FIELD_NAMES_BACKGROUND_COLOR,<lt>Unused<gt>,FIELD_NAMES_FONT_NAME,<lt>Unused<gt>,PROTECT_SHEET_LEVEL,<lt>Unused<gt>,FIELD_NAMES_ROW_HEIGHT,<lt>Unused<gt>,PROTECT_SHEET,NO,MULTIPLE_TEMPLATE_SHEETS,Yes,FIELD_NAMES_CELL_BORDER_STYLE,<lt>Unused<gt>
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_2
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_2
+DEFAULT_MACRO SourceDataset_CSV2_2 $(SourceDataset_CSV2_3)
+GUI MULTIFILE SourceDataset_CSV2_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files(*)|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_2 Yes
+CSV2_2_TRIM_FEATURE_TYPE_NAME "$(CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_2 No
+CSV2_2_REPLACE_ATTR_NAME_INVALID_CHARS "$(CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_2 csv.gz,txt.gz
+CSV2_2_SUPPORTED_READER_ARCHIVE_EXTENSIONS "$(CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_DELIMITER_DETECTION_ALGORITHM_CSV2_2 EQUAL_FIELDS_PER_LINE
+CSV2_2_DELIMITER_DETECTION_ALGORITHM "$(CSV2_IN_DELIMITER_DETECTION_ALGORITHM_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_2 FORMAT_NAME
+CSV2_2_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_2 CSV2_IN_DELIMITER_CSV2_2%CSV2_IN_FIELD_NAMES_LINE_CSV2_2%CSV2_IN_DATA_START_LINE_CSV2_2 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_2 auto
+CSV2_2_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_2)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_2 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_2 1
+CSV2_2_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_2)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_2 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_2 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_2 2
+CSV2_2_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_2)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_2 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2%CSV2_IN_FIELD_NAMES_GROUP_CSV2_2%CSV2_IN_FIELD_VALUES_GROUP_CSV2_2%CSV2_IN_ENCODING_GROUP_CSV2_2%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2 No
+CSV2_2_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2 <quote>
+CSV2_2_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 <quote>
+CSV2_2_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2%CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2 Yes
+CSV2_2_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2 No
+CSV2_2_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_NAME_WHITESPACE "$(CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Yes%No Trim Whitespaces From Field Names:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2%CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Field Values
+DEFAULT_MACRO CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Null
+CSV2_2_READ_EMPTY_VALUES_AS "$(CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2)"
+GUI CHOICE CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Missing%Null Read Empty Values As:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_2%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_2 windows-1252
+CSV2_2_ENCODING "$(CSV2_IN_ENCODING_CSV2_2)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_2 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 No
+CSV2_2_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_2 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_2 No
+CSV2_2_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_2)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_2 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_2 250000
+CSV2_2_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_2 Yes
+CSV2_2_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_2)"
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_2 STANDARD_TYPES
+CSV2_2_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_2)"
+# ============================================================================
+# Determines whether string attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_2 EXPLICIT_WIDTH
+CSV2_2_STRING_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_DATE_INPUT_FORMAT_CSV2_2 ISO
+CSV2_2_DATE_INPUT_FORMAT "$(CSV2_IN_DATE_INPUT_FORMAT_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_2 No
+CSV2_2_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_2 
+CSV2_2_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_2 Yes
+CSV2_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_CHUNK_SIZE_CSV2_2 100000
+CSV2_2_CHUNK_SIZE "$(CSV2_IN_CHUNK_SIZE_CSV2_2)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2 
+CSV2_2_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_2 DEFLINE
+CSV2_2_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_2)"
+# ============================================================================
+CSV2_2_GENERATE_FME_BUILD_NUM 24820
+CSV2_2_DATASET "$(SourceDataset_CSV2_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXW_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset_XLSXW)
+GUI FILENAME DestDataset_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Destination Microsoft Excel File:
+CHECK_RASTER_ATTRIBUTES YES
+# ============================================================================
+DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 XLSXW_OUT_OVERWRITE_FILE_XLSXW_1%XLSXW_OUT_TEMPLATEFILE_XLSXW_1%XLSXW_OUT_TEMPLATE_SHEET%XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET Writer Parameters
+# Whether or not to overwrite the file
+DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 No
+XLSXW_1_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_1)"
+GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET,XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET Overwrite Existing File:
+# Template file option
+DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_1 
+XLSXW_1_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Microsoft_Excel_2007+_Workbook(*.xlsx)|*.xlsx|Microsoft_Excel_2007+_Macro_Workbook(*.xlsm)|*.xlsm|Microsoft_Excel_Pre-2007_Workbook(*.xls)|*.xls|All_Files(*)|* Template File:
+GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_1 <Unused>, 
+DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 
+XLSXW_1_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_1 No
+XLSXW_1_REMOVE_UNCHANGED_TEMPLATE_SHEET "$(XLSXW_OUT_REMOVE_UNCHANGED_TEMPLATE_SHEET_XLSXW_1)"
+# Compatibility case to support reading old workspaces which have one template sheet per writer
+DEFAULT_MACRO XLSXW_OUT_MULTIPLE_TEMPLATE_SHEETS_XLSXW_1 Yes
+XLSXW_1_MULTIPLE_TEMPLATE_SHEETS "$(XLSXW_OUT_MULTIPLE_TEMPLATE_SHEETS_XLSXW_1)"
+# Compatibility case to support old case where insert would allow fme_db_operation
+DEFAULT_MACRO XLSXW_OUT_INSERT_IGNORE_DB_OP_XLSXW_1 Yes
+XLSXW_1_INSERT_IGNORE_DB_OP "$(XLSXW_OUT_INSERT_IGNORE_DB_OP_XLSXW_1)"
+# ============================================================================
+# Parameters whose values will be percolated to the feature types, but will not
+# remain as writer level settings
+# Default to not drop feature type first
+DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_1 No
+XLSXW_1_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_1)"
+# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
+DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1 No
+XLSXW_1_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1)"
+# Maintain compatibility with lenient attrName.* matching
+DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1 yes
+XLSXW_1_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1)"
+# Default to write out the field names
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1 Yes
+XLSXW_1_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1)"
+# Allow header row to be unformatted
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FORMATTING_XLSXW_1 NO
+XLSXW_1_FIELD_NAMES_FORMATTING "$(XLSXW_OUT_FIELD_NAMES_FORMATTING_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_ROW_HEIGHT_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_ROW_HEIGHT "$(XLSXW_OUT_FIELD_NAMES_ROW_HEIGHT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FONT_NAME_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_FONT_NAME "$(XLSXW_OUT_FIELD_NAMES_FONT_NAME_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_FONT_COLOR_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_FONT_COLOR "$(XLSXW_OUT_FIELD_NAMES_FONT_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_BACKGROUND_COLOR_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_BACKGROUND_COLOR "$(XLSXW_OUT_FIELD_NAMES_BACKGROUND_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_PATTERN_COLOR_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_PATTERN_COLOR "$(XLSXW_OUT_FIELD_NAMES_PATTERN_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_PATTERN_STYLE_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_PATTERN_STYLE "$(XLSXW_OUT_FIELD_NAMES_PATTERN_STYLE_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_CELL_BORDER_COLOR_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_CELL_BORDER_COLOR "$(XLSXW_OUT_FIELD_NAMES_CELL_BORDER_COLOR_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_CELL_BORDER_STYLE_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_CELL_BORDER_STYLE "$(XLSXW_OUT_FIELD_NAMES_CELL_BORDER_STYLE_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_HORIZONTAL_ALIGNMENT_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_HORIZONTAL_ALIGNMENT "$(XLSXW_OUT_FIELD_NAMES_HORIZONTAL_ALIGNMENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_VERTICAL_ALIGNMENT_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_VERTICAL_ALIGNMENT "$(XLSXW_OUT_FIELD_NAMES_VERTICAL_ALIGNMENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_INDENT_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_TEXT_INDENT "$(XLSXW_OUT_FIELD_NAMES_TEXT_INDENT_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_ORIENTATION_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_TEXT_ORIENTATION "$(XLSXW_OUT_FIELD_NAMES_TEXT_ORIENTATION_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_TEXT_CONTROL_XLSXW_1 <Unused>
+XLSXW_1_FIELD_NAMES_TEXT_CONTROL "$(XLSXW_OUT_FIELD_NAMES_TEXT_CONTROL_XLSXW_1)"
+# Default writer mode
+DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_1 Insert
+XLSXW_1_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_1)"
+# Default raster writing type
+DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_1 PNG
+XLSXW_1_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_1)"
+# ============================================================================
+# Choose excel file protection mode
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_1 NO
+XLSXW_1_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_1)"
+# Whether or not to enable sheet password protection
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1)"
+# Which kind of protection level
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1)"
+# Which kind of specific permissions will be enabled
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1)"
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1 Yes
+XLSXW_1_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1 FEATURE
+XLSXW_1_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_CUSTOM_NUMBER_FORMATTING_XLSXW_1 ENABLE_NATIVE
+XLSXW_1_CUSTOM_NUMBER_FORMATTING "$(XLSXW_OUT_CUSTOM_NUMBER_FORMATTING_XLSXW_1)"
+# ============================================================================
+XLSXW_1_GENERATE_FME_BUILD_NUM 24820
+XLSXW_1_DATASET "$(DestDataset_XLSXW_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.2.0 (20250114 - Build 24820 - WIN64)"
+MAPPING_FILE_ID example
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_2 CSV2_2
+DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
+# -------------------------------------------------------------------------
+
+CSV2_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_CSV2_2)   INPUT FEATURE_TYPE *    ROUTE CSV2 CSV2_2::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_2) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CSV2_2_MERGE_DEF CSV2_2::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,ID,uint32,User,varchar<openparen>1<closeparen>,number<space>of<space>kids,uint32
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_2 Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_2
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+DEFAULT_MACRO DateTimeStamper_EXPRESSION
+INCLUDE [    set expression {<at>DateTimeCast<openparen><at>DateTimeNow<openparen>utc<closeparen><comma>date<closeparen>};    if { {<Unused>} eq {NO} } {        set expression <at>TimeZoneRemove<openparen>$expression<closeparen>;    };    if { {NO} eq {NO} } {        set expression <at>DateTimeRound<openparen>$expression<comma>down<comma>seconds<comma>1<closeparen>;    };    puts "MACRO DateTimeStamper_EXPRESSION $expression"; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { DateTimeStamper }    INPUT  FEATURE_TYPE CSV_CSV2_2    OUTPUT { FEATURE_TYPE DateTimeStamper_OUTPUT       @EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV, _timestamp, $(DateTimeStamper_EXPRESSION), DateTimeStamper)        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE DateTimeStamper_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "metadata_last_update" "SET_TO" "<at>Value<openparen>_timestamp<closeparen>" "int16" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>fme_example_sheet<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+XLSXW_1_DEF fme_example_sheet   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_field_names_formatting  NO   xlsx_field_names_row_height  <Unused>   xlsx_field_names_font_name   <Unused>   xlsx_field_names_font_color  <Unused>   xlsx_field_names_background_color <Unused>   xlsx_field_names_pattern_color <Unused>   xlsx_field_names_pattern_style <Unused>   xlsx_field_names_cell_border_color <Unused>   xlsx_field_names_cell_border_style <Unused>   xlsx_field_names_horizontal_alignment <Unused>   xlsx_field_names_vertical_alignment <Unused>   xlsx_field_names_text_indent <Unused>   xlsx_field_names_text_orientation <Unused>   xlsx_field_names_text_control <Unused>   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   xlsx_template_sheet          ""   xlsx_remove_unchanged_template_sheet No   ID                           number(20,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   User                         string(1,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   "number of kids"             number(20,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)   metadata_last_update         number(20,version<semicolon>1<semicolon>cell_border_formatting<semicolon>NO<semicolon>text_alignment<semicolon>NO<semicolon>cell_protection<semicolon>NO)
