@@ -24,5 +24,4 @@ Directory layout
     ├── .gitignore         <- use this file to indicate which files/folders are NOT saved. For example, log files, configuration files
     └── README.md          <- The top-level README for developers using this project.
 
-## New edit
-New edit to demonstrate fetch and push
+
